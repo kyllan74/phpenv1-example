@@ -2,9 +2,14 @@
 require_once '../vendor/autoload.php';
 
 #use Medoo\Medoo;
+$file = '../storage/database.db';
+if (is_writable('../storage/database.local.db')) {
+$file = '../storage/database.local.db';
+}
+
 $database = new Medoo\Medoo([
 'type' => 'sqlite',
-'database' => '../storage/database.db',
+'database' => $file
 ]);
 
 $comment = new SitePoint\Comment($database);
