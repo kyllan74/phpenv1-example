@@ -1,0 +1,22 @@
+{
+    "name": "sitepoint/guestbook",
+    "description": "Ksiazka gosci",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sitepoint\\Guestbook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mariusz Cegiełka"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "<5.3.4"
+    },
+    "require": {
+        "catfan/medoo": "^2.1"
+    }
+}
